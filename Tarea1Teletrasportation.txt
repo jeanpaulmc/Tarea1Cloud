@@ -1,0 +1,9 @@
+
+-- Pc donde no tiene instalado linux
+
+VBoxManage modifyvm targetvmname --teleporter on --teleporterport port
+
+
+-- Pc donde esta instalado linux y pasa el sistema opartivo
+
+VBoxManage controlvm sourcevmname teleport --host targethost --port port
